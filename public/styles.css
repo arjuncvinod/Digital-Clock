@@ -44,4 +44,7 @@ backdrop-filter: blur(15px);
         background-size: cover;
 
     }
+    .box{
+        padding: 15% 10%;
+    }
 }
