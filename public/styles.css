@@ -36,6 +36,7 @@ backdrop-filter: blur(15px);
 .container h1{
  font-size: 80px;
  color: white;
+ font-family: 'Jua', sans-serif;
 }
 
 @media only screen and (max-width: 1000px) {
