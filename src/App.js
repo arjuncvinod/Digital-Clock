@@ -14,7 +14,9 @@ function App() {
 
   return (
     <div className="container">
-    <h1>{time}</h1>
+      <div className="box">
+        <h1>{time}</h1>
+      </div>
     </div>
   );
 }
