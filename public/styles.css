@@ -43,8 +43,20 @@ backdrop-filter: blur(15px);
     body{
         background-repeat: no-repeat;
         background-size: cover;
+
     }
     .box{
         padding: 15% 10%;
+    }
+
+    @keyframes move {
+    0%{
+    background-position:left;
+    }
+    50%{
+        background-position: right;
+    }
+    100%{
+        background-position: left;
     }
 }
