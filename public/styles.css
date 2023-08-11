@@ -42,7 +42,6 @@ backdrop-filter: blur(15px);
     body{
         background-repeat: no-repeat;
         background-size: cover;
-
     }
     .box{
         padding: 15% 10%;
