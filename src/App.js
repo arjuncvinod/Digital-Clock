@@ -2,15 +2,24 @@ import React,{useState} from "react";
 
 function App() {
 
-  let Ctime= new Date().toLocaleTimeString()
+  let Ctime= new Date().toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+      })
+
 
   const[time,getTime]= useState(Ctime)
 
   function updateTime(){
-    getTime(new Date().toLocaleTimeString());
-  }
-
+    var Time=new Date().toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+      })
+    getTime(Time)
+  
+    }
   setInterval(updateTime,1000)
+    
 
   return (
     <div className="container">
