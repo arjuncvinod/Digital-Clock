@@ -6,9 +6,12 @@ function App() {
         hour: "2-digit",
         minute: "2-digit",
       })
-
+    let sec=new Date().toLocaleTimeString([],{
+      second:"2-digit"
+    })
 
   const[time,getTime]= useState(Ctime)
+  const[seccond,setSecond]=useState(sec)
 
   function updateTime(){
     var Time=new Date().toLocaleTimeString([], {
@@ -17,7 +20,11 @@ function App() {
         hour12:true
 
       })
+      var Sec= new Date().toLocaleTimeString([],{
+        second:"2-digit"
+      })
     getTime(Time)
+    setSecond(Sec)
   
     }
   setInterval(updateTime,1000)
@@ -27,6 +34,7 @@ function App() {
     <div className="container">
       <div className="box">
         <h1>{time}</h1>
+        <h3>{seccond}</h3>
       </div>
     </div>
   );
