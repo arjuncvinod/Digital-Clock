@@ -6,6 +6,7 @@ body{
     background-image: url(bg2.jpg);
     background-size: 150%;
     animation: move 120s infinite;
+    font-family: 'Jua', sans-serif;
 }
 @keyframes move {
     0%{
@@ -28,7 +29,7 @@ body{
     gap: 30px;
 }
 .box{
-padding: 100px 60px ;
+padding: 100px 80px ;
 background-color: rgba(255, 255, 255, 0.15);
 border-radius: 10px;
 backdrop-filter: blur(15px);
@@ -36,10 +37,14 @@ backdrop-filter: blur(15px);
 .container h1{
  font-size: 80px;
  color: white;
- font-family: 'Jua', sans-serif;
  text-transform: uppercase;
+ margin-bottom: 20px;
 }
-
+.container h3{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
 @media only screen and (max-width: 1000px) {
     body{
         background-repeat: no-repeat;
@@ -47,7 +52,7 @@ backdrop-filter: blur(15px);
 
     }
     .box{
-        padding: 15% 10%;
+        padding: 10% 20%;
     }
 
     @keyframes move {
