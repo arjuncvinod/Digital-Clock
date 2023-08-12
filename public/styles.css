@@ -29,7 +29,7 @@ body{
     gap: 30px;
 }
 .box{
-padding: 100px 80px ;
+padding: 80px 80px ;
 background-color: rgba(255, 255, 255, 0.15);
 border-radius: 10px;
 backdrop-filter: blur(15px);
